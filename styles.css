@@ -286,3 +286,12 @@ h2 { font-size: clamp(2.2rem, 4.6vw, 3.4rem); }
 
 /* Real photos: same size and soft, slightly darker grade for the dark site */
 .tile img { width: 100%; height: auto; display: block; border-radius: 2px; filter: brightness(.96) saturate(.95); }
+
+/* Blue butterfly above the name (replaces the round avatar) */
+.hero-butterfly {
+  width: 96px; height: auto; display: block; margin: 0 auto 22px;
+  fill: #7fa7dc; stroke: rgba(243,236,224,.35); stroke-width: .6;
+  filter: drop-shadow(0 0 16px rgba(127,167,220,.35));
+}
+.hero-butterfly .wing { transform-origin: 60px 45px; animation: flap .6s ease-in-out infinite alternate; }
+.hero-butterfly .body { fill: var(--cream); }
