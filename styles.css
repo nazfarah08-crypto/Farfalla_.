@@ -283,3 +283,6 @@ h2 { font-size: clamp(2.2rem, 4.6vw, 3.4rem); }
   .title .ch { opacity: 1; transform: none; filter: none; }
   .petals, .cursor-glow { display: none; }
 }
+
+/* Real photos: same size and soft, slightly darker grade for the dark site */
+.tile img { width: 100%; height: auto; display: block; border-radius: 2px; filter: brightness(.96) saturate(.95); }
