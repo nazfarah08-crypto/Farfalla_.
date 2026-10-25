@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Farfalla · sketches, stories, flowers &amp; dreams</title>
+  <meta name="description" content="Farfalla: pencil sketches, pressed flowers, and handwritten stories.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600&family=Homemade+Apple&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="petals" aria-hidden="true"></div>
+
+  <nav class="nav">
+    <a class="brand" href="#top">Farfalla</a>
+    <div class="links">
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#words">Words</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <svg class="butterfly" viewBox="0 0 120 90" aria-hidden="true">
+      <g class="wing wing-l"><path d="M60 45 C30 0 0 10 8 38 C14 60 40 62 60 45Z" /><path d="M60 45 C40 70 18 80 22 60 C25 48 46 48 60 45Z" /></g>
+      <g class="wing wing-r"><path d="M60 45 C90 0 120 10 112 38 C106 60 80 62 60 45Z" /><path d="M60 45 C80 70 102 80 98 60 C95 48 74 48 60 45Z" /></g>
+      <rect x="57" y="30" width="6" height="32" rx="3" class="body" />
+    </svg>
+    <div class="avatar" role="img" aria-label="Profile picture"></div>
+    <h1 class="title" data-split="Farfalla"></h1>
+    <p class="script lead">a little corner of sketches, stories, flowers &amp; dreams</p>
+    <div class="cta">
+      <a class="btn solid" href="#gallery">Explore the gallery</a>
+      <a class="btn" href="#contact">Say hello</a>
+    </div>
+    <div class="scroll-hint" aria-hidden="true"><span></span></div>
+  </header>
+
+  <section id="about" class="section reveal">
+    <div class="wrap about">
+      <div>
+        <p class="script">hello, you found me</p>
+        <h2>Drawing what quiet moments feel like.</h2>
+        <p class="muted">Farfalla is a personal sketchbook: pencil and ink studies, pressed flowers, handwritten pages, and small stories from everyday life. Replace this with your own story.</p>
+      </div>
+      <div class="paper tilt">
+        <p class="script">my little rules</p>
+        <p class="quote-big">Slow down. Notice the small things. Keep a sketchbook close.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="section">
+    <div class="wrap">
+      <p class="script center">the collection</p>
+      <h2 class="center">Sketches, petals &amp; quiet moments</h2>
+
+      <div class="filters" role="tablist">
+        <button class="active" data-filter="all">All</button>
+        <button data-filter="sketch">Sketches</button>
+        <button data-filter="flower">Flowers</button>
+        <button data-filter="story">Stories</button>
+        <button data-filter="life">Everyday</button>
+      </div>
+
+      <div class="masonry">
+        <!-- To use your real photo: replace the .art div with <img src="images/your-photo.jpg" alt="short description" loading="lazy"> -->
+        <figure class="tile reveal" data-cat="flower"><div class="art a1">Fall in love for roses, because they leave so beautifully.</div><figcaption>Roses · pressed petals</figcaption></figure>
+        <figure class="tile reveal" data-cat="sketch"><div class="art a2">Two hands reaching across a sketchbook page</div><figcaption>Ink sketch</figcaption></figure>
+        <figure class="tile reveal" data-cat="story"><div class="art a3">Somewhere between surviving and living, I quietly became a withered flower.</div><figcaption>Journal entry</figcaption></figure>
+        <figure class="tile reveal" data-cat="life"><div class="art a4">Sunlight through the old window frame</div><figcaption>Morning light</figcaption></figure>
+        <figure class="tile reveal" data-cat="sketch"><div class="art a5">A crowned orchid, drawn in purple</div><figcaption>Colored pencil</figcaption></figure>
+        <figure class="tile reveal" data-cat="flower"><div class="art a6">Red gerbera, drawn petal by petal</div><figcaption>Gerbera study</figcaption></figure>
+        <figure class="tile reveal" data-cat="story"><div class="art a2">I found a piece of peace in petals that never spoke a word.</div><figcaption>Note to self</figcaption></figure>
+        <figure class="tile reveal" data-cat="life"><div class="art a1">A jasmine string, caught in the evening light</div><figcaption>Jasmine</figcaption></figure>
+        <figure class="tile reveal" data-cat="sketch"><div class="art a4">A butterfly sketch in blue ink</div><figcaption>Butterfly study</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="words" class="section quotes reveal">
+    <div class="wrap">
+      <p class="script center">words I keep</p>
+      <h2 class="center">Little lines from the journal</h2>
+      <div class="quote-grid">
+        <blockquote class="quote">Even the quietest garden blooms in its own season.<small>— Farfalla</small></blockquote>
+        <blockquote class="quote">Every stage changes us, yet we still exist.<small>— Farfalla</small></blockquote>
+        <blockquote class="quote">Living in the world that only existed in my imagination.<small>— Farfalla</small></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact reveal">
+    <div class="wrap">
+      <p class="script">let's talk</p>
+      <h2>Commissions, collabs, or just a hello</h2>
+      <form class="form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="email" name="email" placeholder="Your email" required>
+        <textarea name="message" rows="4" placeholder="Your message" required></textarea>
+        <button class="btn solid" type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="yr"></span> Farfalla · flynna02</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
