@@ -295,3 +295,5 @@ h2 { font-size: clamp(2.2rem, 4.6vw, 3.4rem); }
 }
 .hero-butterfly .wing { transform-origin: 60px 45px; animation: flap .6s ease-in-out infinite alternate; }
 .hero-butterfly .body { fill: var(--cream); }
+
+.gallery-intro { max-width: 640px; margin: 0 auto 10px; text-align: center; color: var(--muted); }
