@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://farfalla.vercel.app/sitemap.xml
